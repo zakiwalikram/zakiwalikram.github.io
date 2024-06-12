@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,16 +7,27 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>My Portfolio | Zakiwal Ikram</title>
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" data-bs-theme="dark" style="background-color: #bdb76b">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: var(--bs-body-bg);">
       <div class="container">
-        <a class="navbar-brand" href="#">Zakiwal Ikram</a>
+        <a class="navbar-brand" href="#"><i class="bi bi-code-square"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,6 +45,32 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-item dropdown">
+                <button class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light">
+                      <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>
+                      Light
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark">
+                    <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi-moon-fill"></i>
+                    Dark
+                  </button>
+                </li>
+                  <li>
+                    <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto">
+                      <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
+                      Auto
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -41,16 +78,9 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/profile.jpg" alt="Zakiwal Ikram" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/zaki.jpg" alt="Zakiwal Ikram" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Zakiwal Ikram</h1>
-      <p class="lead">Software Engineer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L30,170.7C60,181,120,203,180,218.7C240,235,300,245,360,240C420,235,480,213,540,218.7C600,224,660,256,720,240C780,224,840,160,900,138.7C960,117,1020,139,1080,165.3C1140,192,1200,224,1260,229.3C1320,235,1380,213,1410,202.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
+      <p class="lead"></p>
     </section>
 
     <!-- About -->
@@ -61,25 +91,41 @@
             <h2>About Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+        <div class="row justify-content-between fs-5 text-justify">
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+            <h4>A little about me..</h4>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse laboriosam doloribus ipsam debitis sapiente, ad exercitationem quis eaque iure consequatur nam magnam amet, laborum, culpa nemo neque? Ab, repudiandae
-              necessitatibus.
+              I am a graduate of a Bachelor of Information Engineering who is interested in working in the field of information technology. Have a fairly in-depth understanding of basic computer concepts, programming, databases, computer networks, software engineering, artificial intelligence and various other related technologies. Apart from that, I am also skilled in problem solving, have good communication skills, and am able to work well in a team. I also have effective time management and am able to adapt quickly to various situations.
             </p>
+            <hr>
+            <h4><i class="bi bi-mortarboard-fill me-2"></i>Education</h4>
+            <ul type="disc">
+              <li>Universitas Putra Indonesia YPTK Padang</li>
+              <p>Bachelor of Computer Science | Informatics Engineering</p>
+              <li>SMKN 2 Solok</li>
+              <p>Building Drawing Techniques</p>
+            </ul>
           </div>
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt ea sunt incidunt possimus fugit et dolorem nulla non. Harum, necessitatibus blanditiis! Explicabo, modi vero!</p>
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <hr>
+            <h4><i class="bi bi-buildings-fill me-2"></i>Work Experience</h4>
+            <ul type="disc">
+              <li>KPRI Kogussel</li>
+              <p>Web Programmer | Internship</p>
+              <li>Kopi Solok Cap Bintang</li>
+              <p>Web Programmer | Internship</p>
+            </ul>
+            <hr>
+            <h4><i class="bi bi-gear-fill me-2"></i>Skills</h4>
+            <ul type="disc"></ul>
+            <li>Hard Skills</li>
+            <p>Programming, Databases, Computer Networks, Software Engineering, etc.</p>
+            <li>Soft Skills</li>
+            <p>Problem Solving, Communication, Team Work, Time Management, Adaptability.</p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#f0e68c"
-          fill-opacity="1"
-          d="M0,224L30,229.3C60,235,120,245,180,245.3C240,245,300,235,360,229.3C420,224,480,224,540,213.3C600,203,660,181,720,197.3C780,213,840,267,900,272C960,277,1020,235,1080,213.3C1140,192,1200,192,1260,186.7C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
+      <div>
     </section>
 
     <!-- Projects -->
@@ -92,7 +138,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/projects/1.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -100,7 +146,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/projects/2.png" class="card-img-top" alt="Project 2" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -108,8 +154,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/projects/1.png" class="card-img-top" alt="Project 1" />
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+              <img src="img/projects/3.png" class="card-img-top" alt="Project 1" />
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
@@ -117,13 +163,6 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,288L30,293.3C60,299,120,309,180,298.7C240,288,300,256,360,245.3C420,235,480,245,540,256C600,267,660,277,720,282.7C780,288,840,288,900,282.7C960,277,1020,267,1080,266.7C1140,267,1200,277,1260,272C1320,267,1380,245,1410,234.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
     </section>
 
     <!-- Contact -->
@@ -162,21 +201,138 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#bdb76b"
-          fill-opacity="1"
-          d="M0,64L30,80C60,96,120,128,180,133.3C240,139,300,117,360,96C420,75,480,53,540,58.7C600,64,660,96,720,112C780,128,840,128,900,112C960,96,1020,64,1080,58.7C1140,53,1200,75,1260,80C1320,85,1380,75,1410,69.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-        ></path>
-      </svg>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-white pb-5" style="background-color: #bdb76b">
-      <p>Created with love by Zakiwal Ikram</p>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 Zakiwal Ikram. All Rights Reserved.</small>
+            <ul class="mt-3">
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+      /*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ */
+
+(() => {
+  'use strict'
+
+  const getStoredTheme = () => localStorage.getItem('theme')
+  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+  const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+      return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  }
+
+  const setTheme = theme => {
+    if (theme === 'auto') {
+      document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  setTheme(getPreferredTheme())
+
+  const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+      return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const iconOfActiveBtn = btnToActive.querySelector('i').dataset.themeIcon
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('active')
+      element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
+    activeThemeIcon.classList.add(iconOfActiveBtn);
+    activeThemeIcon.dataset.iconActive = iconOfActiveBtn
+    btnToActive.setAttribute('aria-pressed', 'true')
+    const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+    themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+    if (focus) {
+      themeSwitcher.focus()
+    }
+  }
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+      setTheme(getPreferredTheme())
+    }
+  })
+
+  window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+      .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const theme = toggle.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme, true)
+        })
+      })
+  })
+})()
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Software Engineer' });
+      gsap.to('#myText', { duration: 2, text: 'thank you for waiting', delay: 1 });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+      gsap.from('.jumbotron img', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce', delay: 0.5 });
+      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 1 });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwf2AdZ4Yd_mNlJ67BITFDG-Hw4FoQVvcdijU0-1uS7F6uX1c0OGWtetkjDIYTFtO5VUA/exec';

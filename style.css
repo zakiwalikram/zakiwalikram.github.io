@@ -2,15 +2,45 @@ html {
   scroll-behavior: smooth;
 }
 
-.jumbotron {
-  padding-top: 6rem;
-  background-color: #f0e68c;
-}
-
-#projects {
-  background-color: #f0e68c;
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  /* font-size: 1.2rem; */
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 section {
   padding-top: 5rem;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+  align-content: center;
+}
+
+#projects {
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+}
+
+footer {
+  padding: 3rem;
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
 }
