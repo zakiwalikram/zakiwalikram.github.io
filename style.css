@@ -44,3 +44,10 @@ footer li {
   display: inline;
   margin: 0.5rem;
 }
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    overflow-x: hidden;
+  }
+}
