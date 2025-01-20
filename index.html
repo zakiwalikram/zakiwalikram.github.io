@@ -180,7 +180,7 @@
               <strong>Thank You!</strong> We have received your message..
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form name="my-contact-form">
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
@@ -327,8 +327,8 @@
     </script>
 
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwf2AdZ4Yd_mNlJ67BITFDG-Hw4FoQVvcdijU0-1uS7F6uX1c0OGWtetkjDIYTFtO5VUA/exec';
-      const form = document.forms['my-contact-form'];
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwvdB7jAPMjlG1dut8Muhfrmjb9zGbzRCXL6Phb-f9wAatsEK61QLRasuThlRLo4sOi/exec';
+      const form = document.forms['submit-to-google-sheet'];
       const btnKirim = document.querySelector('.btn-kirim');
       const btnLoading = document.querySelector('.btn-loading');
       const myAlert = document.querySelector('.my-alert');
